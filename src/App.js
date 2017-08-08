@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Projects from './components/projects';
+import addProject from './components/addProject';
 
 class App extends Component {
   constructor(){
@@ -30,7 +31,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-  My App
+  <addProject />
   <Projects projects={this.state.projects} />
       </div>
     );
